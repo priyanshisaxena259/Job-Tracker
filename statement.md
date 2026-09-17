@@ -1,62 +1,70 @@
-# Job-Tracker – Project Statement
+# JobTracker – Project Statement
 
 ## 1. Project Title
 
-**Job-Tracker – Job and Application Tracking System**
+**JobTracker – Job and Application Tracking System**
 
 ---
 
 ## 2. Problem Statement
 
-Managing job opportunities and keeping track of job applications manually can become difficult when a candidate applies to multiple positions.
+Managing multiple job opportunities and applications manually can become difficult for candidates.
 
-It can be challenging to remember:
+A candidate may need to keep track of different job postings, application statuses, interview schedules, job deadlines, and other application-related information.
 
-- Which jobs have been applied for
-- Application status
-- Interview schedules
-- Job details and deadlines
-- Overall application progress
-
-The Job-Tracker system provides a simple console-based solution for organizing this information in one place.
+JobTracker provides a simple console-based system for organizing job opportunities, applications, and interviews in one place.
 
 ---
 
-## 3. Project Objective
+## 3. Scope of the Project
 
-The objective of this project is to develop a Java-based application that can:
+The scope of JobTracker includes:
 
-1. Store and manage job information.
-2. Search and retrieve job records.
-3. Track job applications.
-4. Update application statuses.
-5. Schedule and view interviews.
-6. Generate application statistics.
-7. Store information using file handling.
-8. Demonstrate important Core Java concepts.
+- Managing job postings.
+- Adding, viewing, searching, updating, and deleting jobs.
+- Creating and managing job applications.
+- Tracking application statuses.
+- Scheduling and viewing interviews.
+- Storing project data using local text files.
+- Generating application statistics.
+- Generating a text-based project report.
+
+The project focuses on demonstrating Core Java programming concepts through a practical application.
 
 ---
 
-## 4. Scope of the Project
+## 4. Target Users
 
-The system focuses on basic job and application management.
+The primary target users of the system are:
 
-The major modules are:
+### Job Seekers / Candidates
+
+Candidates can use the system to:
+
+- Keep track of available jobs.
+- Record their applications.
+- Track application progress.
+- Store interview information.
+- Review their application statistics.
+
+### Students / Learners
+
+The project can also be used as an educational example for students learning Java and Object-Oriented Programming concepts.
+
+---
+
+## 5. High-Level Features
 
 ### Job Management
 
-Users can:
-
 - Add jobs
 - View all jobs
-- Search jobs
-- Find jobs using their ID
-- Update job information
+- Search jobs by title or location
+- Find jobs by ID
+- Update job details
 - Delete jobs
 
 ### Application Management
-
-Users can:
 
 - Create job applications
 - View applications
@@ -66,109 +74,21 @@ Users can:
 
 ### Interview Management
 
-Users can:
-
 - Schedule interviews
+- View scheduled interviews
 - Store interview date and time
 - Store interview type
 - Store meeting links
-- View scheduled interviews
 
-### Report Management
+### Reporting
 
-The system can:
-
-- Display application statistics
-- Count selected applications
-- Count rejected applications
-- Count interview-stage applications
+- View application statistics
+- Count applications by status
 - Generate a text-based report
 
----
+### Data Storage
 
-## 5. Technologies Used
-
-The project is developed using:
-
-- Java
-- VS Code
-- Java Collections Framework
-- Java I/O
-- Exception Handling
-- Multithreading
-- Interfaces
-- Enums
-
-The project uses local text files for data storage and does not require an external database.
-
----
-
-## 6. Object-Oriented Programming Concepts
-
-The project demonstrates the following OOP concepts:
-
-### Encapsulation
-
-Class variables are declared private and accessed through getters and setters.
-
-### Inheritance
-
-The `Candidate` and `Recruiter` classes inherit from the `User` class.
-
-### Abstraction
-
-`User` is an abstract class containing the abstract method `displayProfile()`.
-
-### Method Overriding
-
-`Candidate` and `Recruiter` provide their own implementations of `displayProfile()`.
-
-### Polymorphism
-
-Overridden methods allow different subclasses of `User` to provide different implementations of the same method.
-
-### Interface
-
-The `Trackable` interface defines the `displayStatus()` method, which is implemented by the `Application` class.
-
-### Enums
-
-The project uses:
-
-- `JobType`
-- `ApplicationStatus`
-
-to represent predefined values.
-
----
-
-## 7. Exception Handling
-
-Custom exceptions are used to handle invalid operations.
-
-The project contains:
-
-- `JobNotFoundException`
-- `ApplicationNotFoundException`
-
-These exceptions are used when a requested job or application cannot be found.
-
----
-
-## 8. File Handling
-
-The project uses Java I/O to store data locally.
-
-The `FileManager` class handles operations such as:
-
-- Creating folders
-- Writing data
-- Appending data
-- Reading data
-- Deleting files
-- Generating reports
-
-The main data files are:
+The system stores information using local text files:
 
 ```text
 data/jobs.txt
