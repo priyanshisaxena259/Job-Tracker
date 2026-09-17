@@ -1,12 +1,6 @@
 # Job-Tracker – Job and Application Tracking System
 
-## 1. Project Title
-
-**Job-Tracker – Job and Application Tracking System**
-
----
-
-## 2. Problem Statement
+## 1. Problem Statement
 
 Managing multiple job opportunities and applications manually can become difficult for candidates.
 
@@ -16,7 +10,7 @@ JobTracker provides a simple console-based system for organizing job opportuniti
 
 ---
 
-## 3. Objectives
+## 2. Objectives
 
 The main objectives of the JobTracker project are:
 
