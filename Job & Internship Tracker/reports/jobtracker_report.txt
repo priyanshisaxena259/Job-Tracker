@@ -1,0 +1,37 @@
+==============================
+       JOB TRACKER REPORT
+==============================
+
+Total Jobs         : 1
+Total Applications : 1
+Selected           : 0
+Rejected           : 0
+Interviews         : 1
+
+==============================
+           JOBS
+==============================
+
+
+===== JOB =====
+Job ID      : 101
+Recruiter ID: 1
+Title       : Senior Java Developer
+Description : Java Developer with backend skills
+Location    : Indore
+Salary      : 800000.0
+Job Type    : FULL_TIME
+Deadline    : 2027-01-31
+
+==============================
+       APPLICATIONS
+==============================
+
+
+===== APPLICATION =====
+Application ID : 201
+Candidate ID   : 1
+Job ID         : 101
+Application Date: 2026-09-17
+Status         : INTERVIEW
+Cover Letter   : I am interested in this Senior Java Developer position.
