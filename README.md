@@ -1,27 +1,28 @@
-# Job-Tracker – Job & Application Tracking System
+# Job-Tracker – Job and Application Tracking System
 
 ## 1. Project Overview
 
-Job-Tracker is a console-based Java application developed to manage job opportunities, job applications and interviews.
+JobTracker is a console-based Java application designed to manage job opportunities, job applications, interviews, and application reports.
 
-The system allows users to add, view, search, update and delete job records. It also provides application tracking, interview scheduling, statistics and report generation.
+The system provides a structured way to add, view, search, update, and delete job records. It also allows users to create applications, track application statuses, schedule interviews, view statistics, and generate reports.
 
-The project is developed using Core Java and demonstrates Object-Oriented Programming, exception handling, collections, file handling, interfaces, enums and multithreading.
+The project is developed using Core Java and demonstrates important Object-Oriented Programming and Java programming concepts.
 
 ---
 
 ## 2. Objectives
 
-The main objectives of the project are:
+The main objectives of JobTracker are:
 
-- To manage job postings efficiently.
+- To manage job opportunities efficiently.
 - To maintain job application records.
 - To track application statuses.
-- To schedule and view interviews.
-- To search jobs using keywords.
+- To schedule and manage interviews.
+- To search and retrieve job information.
 - To generate application statistics.
-- To store data using file handling.
-- To demonstrate important Core Java concepts.
+- To generate text-based reports.
+- To demonstrate Core Java concepts through a practical project.
+- To store data persistently using Java file handling.
 
 ---
 
@@ -29,10 +30,10 @@ The main objectives of the project are:
 
 ### Job Management
 
-- Add a new job
+- Add a job
 - View all jobs
 - Search jobs by title or location
-- Find a job using its ID
+- Find a job by ID
 - Update job details
 - Delete a job
 
@@ -40,79 +41,31 @@ The main objectives of the project are:
 
 - Apply for a job
 - View all applications
-- Find an application using its ID
+- Find an application by ID
 - Update application status
 - Delete an application
 
 ### Interview Management
 
-- Schedule interviews
+- Schedule an interview
 - View scheduled interviews
 - Store interview date and time
-- Store interview type and meeting link
+- Store interview type
+- Store meeting links
 
 ### Reports
 
-- Display job and application statistics
-- Count selected, rejected, and interview-stage applications
-- Generate a text report
+- View application statistics
+- Count selected applications
+- Count rejected applications
+- Count interview-stage applications
+- Generate a text-based report
 
----
+### File-Based Storage
 
-## 4. Technologies Used
-
-- Java
-- Object-Oriented Programming
-- Java Collections Framework
-- File Handling
-- Exception Handling
-- Multithreading
-- Interfaces
-- Enums
-- VS Code
-
----
-
-## 5. Project Structure
+The application stores data locally in:
 
 ```text
-JobTracker/
-│
-├── src/
-│   ├── Main.java
-│   │
-│   ├── model/
-│   │   ├── User.java
-│   │   ├── Candidate.java
-│   │   ├── Recruiter.java
-│   │   ├── Job.java
-│   │   ├── Application.java
-│   │   ├── Interview.java
-│   │   ├── Trackable.java
-│   │   │
-│   │   └── enums/
-│   │       ├── JobType.java
-│   │       └── ApplicationStatus.java
-│   │
-│   ├── service/
-│   │   ├── JobService.java
-│   │   ├── ApplicationService.java
-│   │   └── ReportService.java
-│   │
-│   ├── exception/
-│   │   ├── JobNotFoundException.java
-│   │   └── ApplicationNotFoundException.java
-│   │
-│   └── util/
-│       └── FileManager.java
-│
-├── data/
-│   ├── jobs.txt
-│   ├── applications.txt
-│   └── interviews.txt
-│
-├── reports/
-│   └── jobtracker_report.txt
-│
-├── README.md
-└── statement.md
+data/jobs.txt
+data/applications.txt
+data/interviews.txt
